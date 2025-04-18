@@ -44,6 +44,9 @@
 
     // Kick off the start of the story!
     continueStory(true);
+	
+//Play background music when story begins
+document.getElementById("bg-music").play();
 
     // Main story processing function. Each time this is called it generates
     // all the next content up as far as the next set of choices.
