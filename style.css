@@ -199,6 +199,7 @@ img {
 */
 .choice a, .choice span {
     font-size: 15pt;
+    color: #b9fbc0;
 }
 
 /* 
@@ -271,8 +272,8 @@ body.dark {
     background: black;
 }
 
-.dark a {
-    color: #cc8f1a;
+.dark .choice a, .dark .choice span {
+    color: #b9fbc0;
 }
 .dark .unclickable{
     color: #c4af87;
