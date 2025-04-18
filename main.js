@@ -45,8 +45,16 @@
     // Kick off the start of the story!
     continueStory(true);
 	
-//Play background music when story begins
-document.getElementById("bg-music").play();
+var splitTag = splitPropertyTag(tag);
+splitTag.property = splitTag.property.toUpperCase();
+
+// MUSIC: play
+if (splitTag && splitTag.property == "MUSIC") {
+    if (splitTag.val == "play") {
+        var music = document.getElementById("bg-music");
+        if (music) music.play();
+    }
+}
 
     // Main story processing function. Each time this is called it generates
     // all the next content up as far as the next set of choices.
